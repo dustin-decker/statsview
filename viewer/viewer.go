@@ -38,7 +38,7 @@ const (
 	ThemeMacarons Theme = types.ThemeMacarons
 )
 
-const (
+var (
 	DefaultTemplate = `
 $(function () { setInterval({{ .ViewID }}_sync, {{ .Interval }}); });
 function {{ .ViewID }}_sync() {
