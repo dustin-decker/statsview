@@ -44,7 +44,7 @@ $(function () { setInterval({{ .ViewID }}_sync, {{ .Interval }}); });
 function {{ .ViewID }}_sync() {
     $.ajax({
         type: "GET",
-        url: "http://{{ .Addr }}/debug/statsview/view/{{ .Route }}",
+        url: "/debug/statsview/view/{{ .Route }}",
         dataType: "json",
         success: function (result) {
             let opt = goecharts_{{ .ViewID }}.getOption();
