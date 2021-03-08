@@ -2,7 +2,6 @@ package statsview
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 	"net/http/pprof"
 	"time"
