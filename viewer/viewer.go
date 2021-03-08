@@ -38,7 +38,7 @@ const (
 	ThemeMacarons Theme = types.ThemeMacarons
 )
 
-var (
+const (
 	DefaultTemplate = `
 $(function () { setInterval({{ .ViewID }}_sync, {{ .Interval }}); });
 function {{ .ViewID }}_sync() {
@@ -72,7 +72,7 @@ function {{ .ViewID }}_sync() {
 	DefaultMaxPoints  = 30
 	DefaultTimeFormat = "15:04:05"
 	DefaultInterval   = 2000
-	DefaultAddr       = "localhost:18066"
+	DefaultAddr       = ":18066"
 	DefaultTheme      = ThemeMacarons
 )
 
